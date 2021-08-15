@@ -11,6 +11,7 @@ import {
   HelpOutline as FAQIcon,
   ArrowBack as ArrowBackIcon,
 } from "@material-ui/icons";
+import AssessmentIcon from '@material-ui/icons/Assessment';
 import { useTheme } from "@material-ui/styles";
 import { withRouter } from "react-router-dom";
 import classNames from "classnames";
@@ -33,16 +34,15 @@ const structure = [
   { id: 0, label: "Dashboard", link: "/app/dashboard", icon: <HomeIcon /> },
   {
     id: 1,
-    label: "Typography",
-    link: "/app/typography",
-    icon: <TypographyIcon />,
-  },
-  { id: 2, label: "Tables", link: "/app/tables", icon: <TableIcon /> },
-  {
-    id: 3,
-    label: "New Order",
-    link: "/app/neworder",
+    label: "ارسال پیامک",
+    link: "/app/newmessage",
     icon: <NotificationsIcon />,
+  },
+  {
+    id: 2,
+    label: "گزارش پیامک ها",
+    link: "/app/report",
+    icon: <AssessmentIcon />,
   },
 ];
 

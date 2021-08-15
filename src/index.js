@@ -18,11 +18,15 @@ import {
 import { create } from 'jss';
 import rtl from 'jss-rtl';
 import { StylesProvider, jssPreset } from '@material-ui/core/styles';
+import { createUploadLink } from "apollo-upload-client";
 
 // Configure JSS
 const jss = create({ plugins: [...jssPreset().plugins, rtl()] });
+
 const client = new ApolloClient({
-  uri: 'http://risos.hadeth.ir/graphql/',
+  link: createUploadLink({
+      uri:"https://genito.ir/graphql"
+  }),
   cache: new InMemoryCache()
 });
 

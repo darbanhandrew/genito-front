@@ -1,6 +1,6 @@
 import React from "react";
 import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
-
+import './App.css';
 // components
 import Layout from "./Layout";
 
